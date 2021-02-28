@@ -1,0 +1,180 @@
+Zadanie 1
+
+int main()
+{
+    int styczen = 31;
+    int luty = 29;
+    int marzec = 31;
+
+    int iloscdni = styczen+luty+marzec;
+
+
+
+    printf("%d", iloscdni);
+    return 0;
+}
+
+
+Zadanie 2
+
+int main()
+{
+    int suma =0;
+    for(int i =0;i<=10;i++)
+    {
+        suma = suma + i;
+
+    }
+
+
+
+    printf("%d", suma);
+    return 0;
+}
+
+Zadanie 3
+
+int main()
+{
+    int iloczyn = 1;
+    for(int i =1;i<=10;i++)
+    {
+        iloczyn*=i;
+
+    }
+
+
+
+    printf("%d", iloczyn);
+    return 0;
+}
+
+Zadanie 4
+
+int main()
+{
+    float kwota = 1000;
+
+    float oproc = 1.06;
+
+    float pierwszy = kwota*oproc;
+    printf("%f,  - Kwota po pierwszym roku\n", pierwszy);
+
+    float drugi = pierwszy*oproc;
+    printf("%f, - Kwota po drugim roku\n",drugi);
+
+    float trzeci = drugi*oproc;
+    printf("%f, - Kwota po trzecim roku\n",trzeci);
+
+
+
+
+
+
+    return 0;
+}
+
+Zadanie 5
+int main()
+{
+
+
+
+
+printf("%s +----+\n |Java|\n +----+");
+
+
+    return 0;
+}
+
+Zadanie 6
+
+int main()
+{
+
+
+
+
+printf("%s   ///// \n  +'''''+ \n (| o o |) \n   | ^ | \n  | `-` | \n  +-----+");
+
+
+    return 0;
+}
+
+Zadanie 7
+
+
+
+
+
+
+Zadanie 8 
+int main()
+{
+
+
+
+
+printf("%s    + \n   + +\n  +   +\n +-----+\n | .-. |\n | | | |\n +-+-+-+");
+
+
+    return 0;
+}
+
+Zadanie 9
+
+int main()
+{
+
+
+
+
+printf("%s {/_/}       -----\n( ' ' )    / Hello /\n(  -  )    < Junior >\n | | |     / Coder! /\n(__|__)      -----");
+
+
+    return 0;
+}
+
+
+Zadanie 10
+
+int main()
+{
+
+
+
+
+printf("%s  1. interstellar \n  2. outlaw king \n  3. zielona mila");
+
+
+    return 0;
+}
+
+
+Zadanie 11
+
+int main()
+{
+
+
+
+
+printf("%s  Dlon\n Dwadzieścia siedem kości trzydzieści pięć mięśniokoło dwóch tysięcy komórek nerwowychw każdej opuszce naszych pięciu palcówTo zupełnie wystarczy żeby napisać Mein Kampfalbo Chatkę Puchatka.");
+
+
+    return 0;
+}
+
+Zadanie 12
+
+int main()
+{
+    printf("%c * * * *==============\n   * * *\n  * * * *==============\n   * * *\n  * * * *==============\n   * * *\n  * * * *==============\n   * * *\n  * * * *==============  ");
+
+
+
+
+    return 0;
+}
+
+
