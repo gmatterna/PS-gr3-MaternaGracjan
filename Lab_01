@@ -1,4 +1,4 @@
-Zadanie 1
+Zadanie 1.3.1
 
 int main()
 {
@@ -12,4 +12,202 @@ int main()
     return 0;
 }
 
-Zadanie 2
+Zadanie 1.3.2
+
+int main()
+{
+
+    int n;
+    int x;
+    printf("%d Podaj n:");
+    scanf("%d",&n);
+    printf("%d Podaj x:");
+    scanf("%d",&x);
+    if(n>x)
+        printf("%d",n);
+    if(x>n)
+        printf("%d",x);
+    if(n==x)
+        printf("%d",n);
+
+
+
+    return 0;
+}
+
+Zadanie 1.3.3
+
+int main()
+{
+
+    int n;
+    int x;
+    int y;
+    printf("%d Podaj n: ");
+    scanf("%d", &n);
+
+    printf("%d Podaj x: ");
+    scanf("%d", &x);
+
+    printf("%d Podaj y: ");
+    scanf("%d", &y);
+
+    if(n>x&&n>y)
+    {
+        printf("%d", n);
+
+    }
+    if(x>n&&x>y)
+    {
+        printf("%d", x);
+
+    }
+    if(y>n&&y>x)
+    {
+        printf("%d", y);
+
+    }
+    if(x==y&&x==n&&y==n)
+    {
+        printf("%c Wszystkie liczby sa rowne nie ma ekstremum");
+    }
+    
+
+    return 0;
+}
+
+Zadanie 1.3.4
+
+int main()
+{
+    int x;
+    int y;
+    printf("%c Podaj x:");
+    scanf("%d", &x);
+
+    printf("%c Podaj y:");
+    scanf("%d", &y);
+
+    if(x<0)
+        x=-x;
+    if(y<0)
+        y=-y;
+    if(x>y)
+        printf("%c x>y\n");
+    else if(y>x)
+        printf("%c y>x\n");
+    else
+        printf("%c x=y\n");
+
+
+
+
+    return 0;
+}
+
+Zadanie 1.3.5
+
+int main()
+{
+    int wybor;
+    int podstawa;
+    int bok1;
+    int bok2;
+    int a;
+    int b;
+    int wysokosc;
+
+    printf("podaj 1 jesli chcesz podac dlugosc podstawy i wysokosc\n");
+    printf("podaj 2 jesli chcesz podac dlugosc trzech bokow\n");
+    scanf("%d", &wybor);
+
+    if(wybor==1)
+    {
+        printf("%c Podaj dlugosc podstawy:");
+    scanf("%d", &podstawa);
+    printf("%c Podaj wysokosc:");
+    scanf("%d", &wysokosc);
+    int pole =(podstawa*wysokosc)/2;
+    printf("Pole wynosi: %d", pole);
+
+    }
+
+    if(wybor==2)
+    {
+         printf("%c Podaj podstawe:");
+    scanf("%d", &podstawa);
+         printf("%c Podaj bok nr 1:");
+    scanf("%d", &bok1);
+
+    printf("%c Podaj bok nr 2:");
+    scanf("%d", &bok2);
+    a=(podstawa+bok1+bok2)/2;
+    b =sqrt(a*(a-podstawa)*(a-bok1)*(a-bok2));
+    printf("pole trojkata wynosi: %d",b);
+
+
+
+}
+
+
+
+
+
+    return 0;
+}
+
+
+Zadanie 1.3.6
+
+int main()
+{
+    double a1,a2,b1,b2,c1,c2,wx,wy,w,x,y;
+
+    printf("Podaj a1: \n");
+    scanf("%d", &a1);
+
+    printf("Podaj b1: \n");
+    scanf("%d", &b1);
+
+    printf("Podaj c1: \n");
+    scanf("%d", &c1);
+
+    printf("Podaj a2: \n");
+    scanf("%d", &a2);
+
+    printf("Podaj b2: \n");
+    scanf("%d", &b2);
+
+    printf("Podaj c2: \n");
+    scanf("%d", &c2);
+
+    w = a1*b2 -b1*a2;
+    wx = c1*b2 - b1*c2;
+    wy = a1*c2 - c1*a2;
+
+    if(w!=0)
+    {
+        printf("x = %d", wx/w);
+         printf("y = %d", wy/w);
+
+
+    }
+    else
+        if(wx==0&&wy==0)
+         printf("Uklad ma nieskonczenie wiele rozwiazan");
+    else
+    {
+        printf("uklad sprzeczny");
+    }
+
+
+
+
+    return 0;
+}
+
+
+
+
+
+
