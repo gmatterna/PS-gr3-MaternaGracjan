@@ -164,4 +164,23 @@ int main()
     return 0;
 }
 
+Zadanie 1.4.14
+
+int main()
+{
+  int n, a, b, c;
+  scanf("%d",&n);
+
+  for(a = 1;a<=n-2;a++)
+    for(b=a+1;b<=n-1;b++)
+     for(c=b+1;c<=n;c++)
+     if(a*a+b*b==c*c)
+     printf("%d^2 + %d^2 + %d^2", a, b, c);
+
+
+
+    return 0;
+}
+
+
 
