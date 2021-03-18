@@ -188,12 +188,7 @@ int main()
 
 
 
-int main()
-{
-    unsigned int n;
-    scanf("%d",&n);
-    printf("%d", hop(n));
-}
+
 
 
 Zadanie 2.2.12
