@@ -1,0 +1,118 @@
+Zadanie 2.1 b)
+
+
+
+int main(void)
+{
+    int N = 1000;
+    short tab[N];
+    int n;
+    printf("podaj n: ");
+    scanf("%d",&n);
+
+    if (n<= 0 || n > N)
+    {
+        printf("Liczba elementow musi byc z przedzialu[1, %d\n]!", N);
+        return 1;
+    }
+
+
+    short gen = 100;
+    srand(time(0));
+    for(int j =0;j<n;++j)
+    {
+        tab[j] = rand() % gen + 1;
+    }
+
+    for(int j =0;j<n;++j)
+    {
+        printf("%5d", tab[j]);
+    }
+    printf("\n");
+
+    for(int j = 0; j<n; ++j)
+    {
+        if(tab[j]%2==1)
+            tab[j] = tab[j] * 2;
+        else
+            tab[j] = tab[j] *(-1);
+
+
+    }
+    printf("\n");
+
+
+    for (int j =0; j<n; ++j)
+    {
+        printf("%5d", tab[j]);
+        if(tab[j] > 0)
+            tab[j] = 1;
+        else
+            tab[j] = -1;
+
+
+    }
+    printf("\n");
+
+
+    for(int j =0;j<n; ++j)
+    {
+        printf("%5d",tab[j]);
+    }
+    printf("\n");
+
+
+
+    return 0;
+}
+
+
+
+Zadanie 2.1 c)
+
+int main(void)
+{
+    int N = 1000;
+    short tab[N];
+    int n;
+    printf("podaj n: ");
+    scanf("%d",&n);
+
+    if(0>lewy|| lewy > n)
+    {
+        printf("lewy powinien byc z przedzialu[0,%d\n]!", n);
+        return 1;
+    }
+
+
+    if(0>prawy || prawy > n)
+    {
+        printf("prawy powinien byc z przedzialu[0,%d\n]!", n);
+        return 1;
+    }
+
+    int j = prawy;
+    for(int i = lewy; i <=(prawy+lewy)/2; i++)
+    {
+
+        int temp = tab[i];
+        tab[i] = tab[j];
+        tab[j] = temp;
+        j--;
+    }
+
+    printf("[ ");
+    for(int i = 0; i<n; i++)
+    {
+        printf("%d, ", tab[i]);
+    }
+    printf("]");
+    return 0;
+
+}
+
+
+
+
+
+
