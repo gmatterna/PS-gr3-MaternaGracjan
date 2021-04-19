@@ -1,0 +1,200 @@
+ZADANIE 1.1 
+
+b)
+
+
+int main()
+{
+   const int N = 1000;
+   short tab[N];
+   printf("Podaj liczbe elementow: ");
+   int n;
+   scanf("%d",&n);
+
+   if(n<=0 || n > N)
+   {
+       return 1;
+
+   }
+
+   short lim = 999;
+   srand(time(0));
+   for (short *p = tab; p < tab + n; ++p)
+   {
+       *p = rand() % lim + 1;
+   }
+
+   for (short *p = tab; p < tab + n; ++p)
+   {
+       printf("%5d", *p);
+
+   }
+   printf("\n");
+
+   for(short *p = tab; p< tab + n;++p)
+   {
+       if (*p%2==1)
+       {
+           *p = *p*2;
+       }
+       else
+       {
+           *p = *p*(-1);
+       }
+
+   }
+   printf("\n");
+
+
+   for(short *p = tab; p<tab+n;++p)
+   {
+       printf("%5d", *p);
+       if(*p > 0)
+       {
+           *p = 1;
+       }
+       else
+       {
+           *p = -1;
+       }
+   }
+   printf("\n");
+
+   for(short *p = tab; p < tab +n; ++p)
+   {
+       printf("%5d", *p);
+   }
+   printf("\n");
+
+
+
+
+
+    return 0;
+}
+
+
+
+ZADANIE 1.1 
+
+c)
+
+int main(void)
+{
+   int N = 1000;
+   short tab[N];
+   int n;
+   printf("podaj n: ");
+   scanf("%d",&n);
+   short lewy;
+   short prawy;
+
+
+
+   if(0>lewy || lewy > n)
+   {
+       return 1;
+   }
+
+
+   if (0>prawy || prawy>n)
+   {
+       return 1;
+   }
+
+
+   int *tempPrawyAdres = tab + prawy;
+   int *tempLewyAdres = tab + lewy;
+   int tempPrawy;
+
+   while(tempLewyAdres != tempPrawyAdres && !(tempLewyAdres > tempPrawyAdres))
+   {
+       tempPrawy = *tempPrawyAdres;
+
+       *tempPrawyAdres = *tempLewyAdres;
+       *tempLewyAdres = tempPrawy;
+
+       tempLewyAdres++;
+       tempPrawyAdres--;
+   }
+
+   printf("[");
+
+   for(int *p = tab; p<tab+n; ++p)
+
+   {
+       printf("%d, ", *p);
+
+   }
+   printf("]\n");
+
+
+
+
+
+    return 0;
+}
+
+
+
+
+ZADANIE 2.1 
+
+
+C) 
+
+void odwroc(short tab[], int lewy, int prawy)
+{
+
+    int n;
+
+
+    short *j = tab + prawy;
+
+    for(short *p = tab; p < (lewy+prawy)/2; ++p)
+    {
+        short tmp = *p;
+        *p = *j;
+        *j = tmp;
+        *j--;
+
+
+
+    }
+
+    printf("\n");
+
+    for(short *p = tab; p < tab + n; ++p)
+    {
+
+        printf("%5d, ", *p);
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+Zadanie 2.2
+
+void generuj2(short tab[], int n, short min, short max)
+{
+    srand(time(0));
+
+    for (short *p = tab; p <tab+n;++p)
+    {
+        *p = rand() % (max-min +1) + min;
+    }
+
+
+}
+
+
