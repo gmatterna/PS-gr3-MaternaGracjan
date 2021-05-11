@@ -1,0 +1,45 @@
+int zad_6_2_15(int n, int t[n][100][100])
+{
+    int a,b,c;
+    int suma = 0;
+
+    for(a=0;a<n;a++)
+        for(b=0;b<100;b++)
+            for(c=0;c<100;c++)
+            suma += t[a][b][c];
+
+
+    return suma;
+
+}
+
+
+void zad_6_2_18(int **t, int n, int m)
+{
+    int a,b;
+
+    for(a=0;a<n;a++)
+        for(b=0;b<m;b++)
+        printf("%d\n", t[a][b]);
+
+
+}
+
+
+
+int zad_6_2_26(int **tab, int n, int m)
+{
+    int **nowa = malloc(m*sizeof(int*));
+    for(int i =0;i<m;i++)
+    {
+        nowa[i] = malloc(n*sizeof(int));
+        for(int j=0;j<n;j++)
+        {
+            nowa[i][j] = tab[j][i];
+        }
+    }
+    return nowa;
+}
+
+
+
