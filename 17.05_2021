@@ -1,0 +1,44 @@
+struct student
+{
+    char* imie;
+    char* nazwisko;
+    unsigned long long* pesel;
+    char* kierunek;
+    int* numer_legitymacji;
+
+
+
+};
+
+typedef struct student st;
+
+
+void dodaj(struct student *s)
+{
+    printf("Podaj imie: ");
+    scanf("%s", &s -> imie);
+    printf("Podaj nazwisko: ");
+    scanf("%s", &s -> nazwisko);
+    printf("Podaj pesel: ");
+    scanf("%llu", &s -> pesel);
+    printf("Podaj kierunek: ");
+    scanf("%s", &s -> kierunek);
+    printf("Podaj nr legitymacji: ");
+    scanf("%d", &s -> numer_legitymacji);
+}
+
+
+int main()
+{
+    struct student s1;
+    dodaj(&s1);
+    printf("%s\n", &s1.imie);
+
+
+   return 0;
+
+}
+
+
+
+
