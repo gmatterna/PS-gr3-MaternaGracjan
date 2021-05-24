@@ -1,0 +1,12 @@
+typedef struct LineSegment
+{
+    Point a,b;
+
+}Linesegment;
+
+void makeLineSegment(Linesegment *ls, int ax, int ay, int bx, int by)
+{
+      
+
+
+}
